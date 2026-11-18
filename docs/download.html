@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Download · LuniOS</title>
+<meta name="description" content="Download LuniOS for the Google Pixel 8a and learn how to install it.">
+<meta name="theme-color" content="#07070C">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="LuniOS">
+<meta property="og:description" content="A calm, glassy Android ROM based on LineageOS. First device: Pixel 8a.">
+<meta property="og:image" content="assets/shots/luni-settings.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+    <nav class="links" id="links" aria-label="Main">
+      <span class="pill" aria-hidden="true"></span>
+      <a href="./">Home</a>
+      <a href="devices.html">Devices</a>
+      <a href="download.html" aria-current="page">Download</a>
+      <a href="https://github.com/project-patina/lunios-updates">GitHub</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="kicker rv">Download</span>
+      <h1 class="rv" style="--d:1">Get LuniOS</h1>
+      <p class="lead rv" style="--d:2">Builds for the Google Pixel 8a (akita). Pick a channel, then follow the guide below.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="wrap">
+      <div class="channels">
+        <article class="chan rv" id="ch-RELEASE">
+          <span class="pill-tag">Stable</span>
+          <h3 class="v">&mdash;</h3>
+          <p class="meta">Loading…</p>
+          <p class="desc">For everyday use. Fewer surprises, fewer new things.</p>
+          <div class="btns"><a class="btn btn-primary dl" href="https://github.com/project-patina/lunios-updates/releases">Download</a><a class="btn btn-ghost page" href="https://github.com/project-patina/lunios-updates/releases">Release page</a></div>
+        </article>
+        <article class="chan rv" style="--d:1" id="ch-BETA">
+          <span class="pill-tag beta">Beta</span>
+          <h3 class="v">&mdash;</h3>
+          <p class="meta">Loading…</p>
+          <p class="desc">New features first. Recommended for fresh installs: the release includes the recovery images.</p>
+          <div class="btns"><a class="btn btn-primary dl" href="https://github.com/project-patina/lunios-updates/releases">Download</a><a class="btn btn-ghost page" href="https://github.com/project-patina/lunios-updates/releases">Release page</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <div class="narrow">
+      <span class="kicker rv">Install</span>
+      <h2 class="rv">First installation</h2>
+      <p class="lead rv">You need a computer with adb and fastboot. The first install erases the phone; later updates do not.</p>
+      <ol class="steps">
+        <li class="rv"><div><h3>Unlock the bootloader</h3><p>Turn on OEM unlocking in Developer options, reboot to the bootloader and run <code>fastboot flashing unlock</code>.</p></div></li>
+        <li class="rv"><div><h3>Flash LuniOS Recovery</h3><p>From the release page, download <code>boot</code>, <code>dtbo</code>, <code>vendor_kernel_boot</code> and <code>vendor_boot</code>, and flash each one with <code>fastboot flash &lt;name&gt; &lt;name&gt;.img</code>.</p></div></li>
+        <li class="rv"><div><h3>Install the system</h3><p>Boot into recovery, choose Factory reset, then Apply update and Apply from ADB, and run <code>adb sideload LuniOS-….zip</code>.</p></div></li>
+        <li class="rv"><div><h3>Restart</h3><p>Go through setup. New versions will show up in Settings, LuniOS Updates.</p></div></li>
+      </ol>
+      <p class="note rv">Back up your data first. Do not relock the bootloader while LuniOS is installed. LuniOS is an early beta: install it at your own risk.</p>
+    </div>
+  </section>
+
+  <section class="section" id="changelog">
+    <div class="narrow">
+      <div class="feed-head">
+        <div>
+          <span class="kicker rv">Changelog</span>
+          <h2 class="rv" style="margin:0">Release notes</h2>
+        </div>
+        <div class="seg rv" role="tablist" id="feed-tabs">
+          <button role="tab" data-c="all" aria-selected="true">All</button>
+          <button role="tab" data-c="RELEASE" aria-selected="false">Stable</button>
+          <button role="tab" data-c="BETA" aria-selected="false">Beta</button>
+        </div>
+      </div>
+      <div class="feed" id="feed"><p class="muted">Loading…</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+      <p>An unofficial Android ROM based on LineageOS and AOSP. Built with AI. Not affiliated with Google or LineageOS. Pixel is a trademark of Google LLC.</p>
+      <p>© 2026 The LuniOS Project. All rights reserved. <a href="legal.html" style="text-decoration:underline">License and terms</a>.</p>
+    </div>
+    <div><h4>Site</h4><ul><li><a href="./">Home</a></li><li><a href="devices.html">Devices</a></li><li><a href="download.html">Download</a></li></ul></div>
+    <div><h4>More</h4><ul><li><a href="https://github.com/project-patina/lunios-updates">GitHub</a></li><li><a href="https://github.com/project-patina/lunios-updates/releases">All releases</a></li><li><a href="https://lineageos.org">LineageOS</a></li><li><a href="legal.html">License and terms</a></li></ul></div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

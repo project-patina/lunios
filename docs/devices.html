@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devices · LuniOS</title>
+<meta name="description" content="Devices supported by LuniOS. First device: Google Pixel 8a (akita).">
+<meta name="theme-color" content="#07070C">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="LuniOS">
+<meta property="og:description" content="A calm, glassy Android ROM based on LineageOS. First device: Pixel 8a.">
+<meta property="og:image" content="assets/shots/luni-settings.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+    <nav class="links" id="links" aria-label="Main">
+      <span class="pill" aria-hidden="true"></span>
+      <a href="./">Home</a>
+      <a href="devices.html" aria-current="page">Devices</a>
+      <a href="download.html">Download</a>
+      <a href="https://github.com/project-patina/lunios-updates">GitHub</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="kicker rv">Devices</span>
+      <h1 class="rv" style="--d:1">Supported devices</h1>
+      <p class="lead rv" style="--d:2">LuniOS starts with one phone and grows with its maintainers.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:50px">
+    <div class="wrap devices">
+      <article class="dev rv">
+        <div class="dev-row">
+          <img class="device-img" src="assets/device/pixel8a-about.webp" width="860" height="1172" alt="Google Pixel 8a showing About LuniOS" loading="lazy">
+          <div>
+            <span class="status">Active</span>
+            <h3>Google Pixel 8a</h3>
+            <span class="code">akita</span>
+            <dl>
+              <dt>Chip</dt><dd>Google Tensor G3</dd>
+              <dt>Latest</dt><dd id="dev-latest">1.2 beta</dd>
+              <dt>Channels</dt><dd>Stable and Beta</dd>
+              <dt>Maintainer</dt><dd>LuniOS (founder)</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="cta" style="justify-content:flex-start">
+          <a class="btn btn-primary btn-sm" href="download.html">Download</a>
+          <a class="btn btn-ghost btn-sm" href="download.html#install">Install guide</a>
+        </div>
+      </article>
+
+      <article class="dev add rv" style="--d:1" id="maintain">
+        <span class="status soon">Open spot</span>
+        <h3>Your device here</h3>
+        <p>Want LuniOS on your phone? New devices are added when someone wants to maintain them: build LuniOS for the device, test it on real hardware and keep it updated.</p>
+        <p>If your phone already has solid LineageOS support and you own one, you are a great fit. Get in touch on GitHub.</p>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/project-patina/lunios-updates/issues">Become a maintainer</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+      <p>An unofficial Android ROM based on LineageOS and AOSP. Built with AI. Not affiliated with Google or LineageOS. Pixel is a trademark of Google LLC.</p>
+      <p>© 2026 The LuniOS Project. All rights reserved. <a href="legal.html" style="text-decoration:underline">License and terms</a>.</p>
+    </div>
+    <div><h4>Site</h4><ul><li><a href="./">Home</a></li><li><a href="devices.html">Devices</a></li><li><a href="download.html">Download</a></li></ul></div>
+    <div><h4>More</h4><ul><li><a href="https://github.com/project-patina/lunios-updates">GitHub</a></li><li><a href="https://github.com/project-patina/lunios-updates/releases">All releases</a></li><li><a href="https://lineageos.org">LineageOS</a></li><li><a href="legal.html">License and terms</a></li></ul></div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

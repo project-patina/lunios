@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LuniOS</title>
+<meta name="description" content="LuniOS is a custom Android 17 ROM based on LineageOS, with a liquid glass design, Google apps and over-the-air updates. First device: Google Pixel 8a.">
+<meta name="theme-color" content="#07070C">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="LuniOS">
+<meta property="og:description" content="A calm, glassy Android ROM based on LineageOS. First device: Pixel 8a.">
+<meta property="og:image" content="assets/shots/luni-settings.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+    <nav class="links" id="links" aria-label="Main">
+      <span class="pill" aria-hidden="true"></span>
+      <a href="./" aria-current="page">Home</a>
+      <a href="devices.html">Devices</a>
+      <a href="download.html">Download</a>
+      <a href="https://github.com/project-patina/lunios-updates">GitHub</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <a class="badge-line rv" href="download.html" id="hero-badge"><b>New</b><span id="hero-badge-text">LuniOS 1.2 beta</span></a>
+      <h1 class="rv" style="--d:1">LuniOS</h1>
+      <p class="lead rv" style="--d:2">A calm, glassy Android for your Pixel. Built on LineageOS, with Google apps included and updates straight from Settings.</p>
+      <div class="cta rv" style="--d:3">
+        <a class="btn btn-primary" href="download.html">Download</a>
+        <a class="btn btn-ghost" href="#screens">Screenshots</a>
+      </div>
+    </div>
+    <div class="hero-phones" id="hero-phones">
+      <img class="p1" src="assets/device/front-lock.webp" width="750" height="1576" alt="Pixel 8a showing the LuniOS lock screen" fetchpriority="high">
+      <img class="p2" src="assets/device/front-settings.webp" width="750" height="1576" alt="Pixel 8a showing the LuniOS section in Settings" fetchpriority="high">
+      <img class="p3" src="assets/device/front-cc.webp" width="750" height="1576" alt="Pixel 8a showing the LuniOS control center" fetchpriority="high">
+    </div>
+    <div class="hero-fade" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap about">
+      <div>
+        <span class="kicker rv">About</span>
+        <h2 class="rv">What is LuniOS?</h2>
+        <p class="lead rv">LuniOS is a custom Android ROM based on LineageOS 24.0 and Android 17. It keeps LineageOS's solid base and adds its own look: translucent glass surfaces, soft spring animations and a handful of features of its own.</p>
+        <p class="lead rv">It ships with Google apps, installs with its own recovery and keeps itself up to date over the air.</p>
+      </div>
+      <dl class="facts rv" style="--d:1">
+        <div><dt>Android</dt><dd>17</dd></div>
+        <div><dt>Based on</dt><dd>LineageOS 24.0</dd></div>
+        <div><dt>Google apps</dt><dd>Included</dd></div>
+        <div><dt>Updates</dt><dd>Over the air</dd></div>
+        <div><dt>First device</dt><dd>Pixel 8a</dd></div>
+        <div><dt>Stage</dt><dd>Early beta</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker rv">Why LuniOS</span>
+        <h2 class="rv">Small things, done with care.</h2>
+      </div>
+      <div class="why">
+        <article class="rv">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="5"/><path d="M7 9h6"/></svg></div>
+          <h3>Liquid glass design</h3>
+          <p>Settings, notifications, the control center, dialogs and menus share one translucent glass style with a soft rim and blur.</p>
+        </article>
+        <article class="rv" style="--d:1">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="6" rx="3"/><rect x="3" y="12" width="18" height="9" rx="4"/></svg></div>
+          <h3>Luna Island</h3>
+          <p>A live pill around the camera shows calls, timers, music, screen recording and charging, and expands into a card when you tap it.</p>
+        </article>
+        <article class="rv" style="--d:2">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg></div>
+          <h3>Updates that just arrive</h3>
+          <p>LuniOS Updates downloads new builds in the background and installs them to the second slot. Pick Stable or Beta.</p>
+        </article>
+        <article class="rv">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0112-5"/><path d="M19 12a7 7 0 01-12 5"/><path d="M17 3v4h-4"/><path d="M7 21v-4h4"/></svg></div>
+          <h3>Springy, interruptible motion</h3>
+          <p>Animations run on springs, so buttons squish a little when pressed and app transitions can be interrupted at any moment.</p>
+        </article>
+        <article class="rv" style="--d:1">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>A solid LineageOS base</h3>
+          <p>Under the glass is LineageOS: its device support, its privacy features and the Android security patches it brings in.</p>
+        </article>
+        <article class="rv" style="--d:2">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/><path d="M7.5 15h9"/></svg></div>
+          <h3>Luni Labs</h3>
+          <p>Experiments hide behind seven taps on the LuniOS version. The first one turns notifications into Luna Island cards with action buttons.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="screens">
+    <div class="wrap gal-head">
+      <div>
+        <span class="kicker rv">Screenshots</span>
+        <h2 class="rv">Straight from a Pixel 8a.</h2>
+        <p class="lead rv">Real screenshots of LuniOS 1.2 beta, not mockups.</p>
+      </div>
+      <div class="gal-ctl rv">
+        <button type="button" id="gal-prev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" id="gal-next" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure><div class="shot"><img src="assets/shots/lock.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>Lock screen</b><span>Glass fingerprint and clock</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/control-center.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>Control center</b><span>Big sliders and tiles</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/home.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>Home screen</b><span>Large icons, glass dock</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/luni-settings.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>LuniOS settings</b><span>Everything LuniOS in one place</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/luni-settings-2.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>More options</b><span>Phone, haptics, battery</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/updates.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>LuniOS Updates</b><span>Release notes before you install</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/luni-labs.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>Luni Labs</b><span>Experimental features</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/about-luni.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>About LuniOS</b><span>Version, build and hardware</span></figcaption></figure>
+      <figure><div class="shot"><img src="assets/shots/keyboard.webp" width="540" height="1200" alt="" loading="lazy"></div><figcaption><b>Settings search</b><span>Results without the clutter</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="honest">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker rv">Good to know</span>
+        <h2 class="rv">Made differently, and we say so.</h2>
+      </div>
+      <div class="honest">
+        <article class="rv">
+          <span class="tag ai">Built with AI</span>
+          <h3>Openly vibe-coded</h3>
+          <p>LuniOS is built with AI, and we are not hiding it. Its features, its code and this website are written together with AI coding assistants, then built and tested on a real Pixel 8a.</p>
+        </article>
+        <article class="rv" style="--d:1">
+          <span class="tag lock">Closed source for now</span>
+          <h3>Early stage, open later</h3>
+          <p>LuniOS is young and not finished yet, so the source is closed for now. It will be published once the project is polished enough to build on.</p>
+        </article>
+        <article class="rv" style="--d:2">
+          <span class="tag base">Based on LineageOS</span>
+          <h3>Standing on giants</h3>
+          <p>LuniOS is based on LineageOS and the Android Open Source Project. The hard work of running Android on real hardware comes from those projects and their contributors.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="devices-cta">
+    <div class="wrap center">
+      <span class="kicker rv">Devices</span>
+      <h2 class="rv">Pixel 8a first. Your phone next?</h2>
+      <p class="lead rv">The Google Pixel 8a is the first and, for now, the only supported phone. More devices will come as people step up to maintain them.</p>
+      <div class="cta rv" style="margin-top:30px">
+        <a class="btn btn-primary" href="devices.html">See devices</a>
+        <a class="btn btn-ghost" href="devices.html#maintain">Become a maintainer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="narrow faq">
+      <h2 class="rv">Questions</h2>
+      <details class="rv"><summary>Is LuniOS stable enough for daily use?</summary><p>It runs daily on the developer's own Pixel 8a, but it is an early beta. Expect rough edges and keep backups of anything important.</p></details>
+      <details class="rv"><summary>Are Google apps included?</summary><p>Yes. The Play Store and Google services come preinstalled, so you can sign in during setup.</p></details>
+      <details class="rv"><summary>Will updates erase my data?</summary><p>No. Updates from LuniOS Updates keep your apps and data. Only the first installation needs a factory reset.</p></details>
+      <details class="rv"><summary>Why is it closed source?</summary><p>Because it is still early and changing fast. The plan is to open the source once LuniOS is polished.</p></details>
+      <details class="rv"><summary>Will banking apps work?</summary><p>Some may not, because the bootloader is unlocked. LuniOS does not try to fake device certification.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="./"><img src="assets/logo.svg" width="24" height="24" alt="">LuniOS</a>
+      <p>An unofficial Android ROM based on LineageOS and AOSP. Built with AI. Not affiliated with Google or LineageOS. Pixel is a trademark of Google LLC.</p>
+      <p>© 2026 The LuniOS Project. All rights reserved. <a href="legal.html" style="text-decoration:underline">License and terms</a>.</p>
+    </div>
+    <div><h4>Site</h4><ul><li><a href="./">Home</a></li><li><a href="devices.html">Devices</a></li><li><a href="download.html">Download</a></li></ul></div>
+    <div><h4>More</h4><ul><li><a href="https://github.com/project-patina/lunios-updates">GitHub</a></li><li><a href="https://github.com/project-patina/lunios-updates/releases">All releases</a></li><li><a href="https://lineageos.org">LineageOS</a></li><li><a href="legal.html">License and terms</a></li></ul></div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
